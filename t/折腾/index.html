@@ -40,6 +40,24 @@ box-shadow:0 0 10px rgba(156,122,38,.5);flex:0 0 auto}
 .nav a{color:var(--dim);text-decoration:none;padding:8px 15px;position:relative;transition:.18s}
 .nav a:hover,.nav a.on{color:var(--gold)}
 .nav a.on::after{content:"";position:absolute;left:15px;right:15px;bottom:2px;height:1px;background:var(--gold)}
+/* 下拉 */
+.dd{position:relative}
+.dd>summary{list-style:none;cursor:pointer;color:var(--dim);padding:8px 15px;transition:.18s;
+display:flex;align-items:center;gap:6px}
+.dd>summary::-webkit-details-marker{display:none}
+.dd>summary::after{content:"";width:5px;height:5px;border-right:1.5px solid currentColor;
+border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:.2s}
+.dd>summary:hover,.dd>summary.on{color:var(--gold)}
+.dd[open]>summary{color:var(--gold)}
+.dd[open]>summary::after{transform:rotate(-135deg) translateY(-2px)}
+.ddbody{position:absolute;top:100%;left:0;z-index:60;min-width:150px;display:flex;flex-direction:column;
+background:rgba(253,251,247,.98);border:1px solid var(--line);backdrop-filter:blur(14px);
+box-shadow:0 14px 34px rgba(120,100,60,.16);padding:6px}
+.ddbody a{padding:9px 14px;font-size:13px;letter-spacing:.5px;color:var(--txt);text-transform:none;
+border:1px solid transparent}
+.ddbody a:hover{background:#faf6ec;border-color:var(--line);color:var(--gold)}
+.ddbody a.on{color:var(--gold);background:#faf6ec}
+.empty-dd{padding:9px 14px;font-size:12px;color:var(--dim)}
 .status{display:flex;align-items:center;gap:7px;color:var(--dim);margin-left:16px}
 .pulse{width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px rgba(44,122,114,.6)}
 
@@ -256,10 +274,10 @@ background:#fff;color:var(--dim);text-decoration:none;transition:.16s;white-spac
 <div class="wrap">
   <div class="hud">
     <a class="mark" href="/nangongs-blog/"><span class="dia"></span><span class="brand">南宫萧痕<em>TO INSPIRE · TO MOVE · TO CREATE</em></span></a>
-    <nav class="nav"><a class="on" href="/nangongs-blog/">全部</a><a class="" href="/nangongs-blog/c/tech/">计算机</a><a class="" href="/nangongs-blog/c/essay/">随笔</a><a class="" href="/nangongs-blog/c/hardware/">硬件</a><a class="" href="/nangongs-blog/diary/">学习日记</a><a href="/nangongs-blog/about/">关于</a></nav>
+    <nav class="nav"><a class="on" href="/nangongs-blog/">全部</a><details class="dd"><summary class="">专栏</summary><div class="ddbody"><a class="" href="/nangongs-blog/c/tech/">计算机</a><a class="" href="/nangongs-blog/c/essay/">随笔</a><a class="" href="/nangongs-blog/c/hardware/">硬件</a><a class="" href="/nangongs-blog/c/debate/">辩论赛有感</a></div></details><a class="" href="/nangongs-blog/diary/">学习日记</a><a class="" href="/nangongs-blog/about/">关于</a></nav>
     <div class="status"><span class="pulse"></span>ONLINE</div>
   </div>
-<div class="pagehead"><div class="k">Tag — 标签</div><h1>#折腾</h1><p>共 1 篇</p></div><div class="grid2"><div><a class="item cut-sm" href="/nangongs-blog/p/%E5%9C%A8-windows-%E4%B8%8A%E8%A3%85-openclaw-%E7%9A%84%E5%AE%8C%E6%95%B4%E8%AE%B0%E5%BD%95/"><div class="cover">01</div><div class="ibody"><div class="imeta"><span class="cat">计算机</span><span>//</span><span>2026.09.16</span><span class="pin">置顶</span></div><h2>在 Windows 上装 OpenClaw 的完整记录</h2><p>从下载到跑通，中间踩了三个坑，都记下来了。</p></div></a></div><aside><div class="panel cut-sm"><div class="ph">Profile</div><div class="avatar"><span>萧</span></div><div class="pname">南宫萧痕</div><blockquote class="pq">我从不后悔曾经的选择。我们做了可以做的一切，然后将希望留给未来。</blockquote><div class="taglist"><a class="tg">记录</a><a class="tg">回看</a><a class="tg">分享</a></div></div><div class="panel cut-sm"><div class="ph">Sectors</div><div class="navlist"><a class="" href="/nangongs-blog/c/tech/"><span>计算机</span><span class="n">02</span></a><a class="" href="/nangongs-blog/c/essay/"><span>随笔</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/hardware/"><span>硬件</span><span class="n">00</span></a></div></div><div class="panel cut-sm"><div class="ph">Tags</div><div class="taglist" style="justify-content:flex-start"><a class="tg " href="/nangongs-blog/t/openclaw/">openclaw 1</a><a class="tg " href="/nangongs-blog/t/windows/">windows 1</a><a class="tg " href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">写作 1</a><a class="tg " href="/nangongs-blog/t/%E5%90%8E%E5%8F%B0/">后台 1</a><a class="tg on" href="/nangongs-blog/t/%E6%8A%98%E8%85%BE/">折腾 1</a><a class="tg " href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">测试 1</a></div></div></aside></div>
+<div class="pagehead"><div class="k">Tag — 标签</div><h1>#折腾</h1><p>共 1 篇</p></div><div class="grid2"><div><a class="item cut-sm" href="/nangongs-blog/p/%E5%9C%A8-windows-%E4%B8%8A%E8%A3%85-openclaw-%E7%9A%84%E5%AE%8C%E6%95%B4%E8%AE%B0%E5%BD%95/"><div class="cover">01</div><div class="ibody"><div class="imeta"><span class="cat">计算机</span><span>//</span><span>2026.09.16</span><span class="pin">置顶</span></div><h2>在 Windows 上装 OpenClaw 的完整记录</h2><p>从下载到跑通，中间踩了三个坑，都记下来了。</p></div></a></div><aside><div class="panel cut-sm"><div class="ph">Profile</div><div class="avatar"><span>萧</span></div><div class="pname">南宫萧痕</div><blockquote class="pq">我从不后悔曾经的选择。我们做了可以做的一切，然后将希望留给未来。</blockquote><div class="taglist"><a class="tg">记录</a><a class="tg">回看</a><a class="tg">分享</a></div><div class="ann">本站正在搭建中。<br>内容会陆续补上，有问题欢迎留言。</div></div><div class="panel cut-sm"><div class="ph">Sectors</div><div class="navlist"><a class="" href="/nangongs-blog/c/tech/"><span>计算机</span><span class="n">02</span></a><a class="" href="/nangongs-blog/c/essay/"><span>随笔</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/hardware/"><span>硬件</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/debate/"><span>辩论赛有感</span><span class="n">00</span></a></div></div><div class="panel cut-sm"><div class="ph">Tags</div><div class="taglist" style="justify-content:flex-start"><a class="tg " href="/nangongs-blog/t/openclaw/">openclaw 1</a><a class="tg " href="/nangongs-blog/t/windows/">windows 1</a><a class="tg " href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">写作 1</a><a class="tg " href="/nangongs-blog/t/%E5%90%8E%E5%8F%B0/">后台 1</a><a class="tg on" href="/nangongs-blog/t/%E6%8A%98%E8%85%BE/">折腾 1</a><a class="tg " href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">测试 1</a></div></div></aside></div>
   <footer>
     <span>© 2026 NANGONG XIAOHEN</span>
     <span>INSPIRE / MOVE / CREATE</span>
