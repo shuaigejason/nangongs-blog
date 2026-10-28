@@ -26,6 +26,19 @@ background-image:repeating-linear-gradient(0deg,rgba(120,100,60,.028) 0 1px,tran
  linear-gradient(90deg,rgba(120,100,60,.030) 1px,transparent 1px);
 background-size:100% 4px,56px 56px,56px 56px}
 .wrap{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:0 24px 64px}
+/* Obsidian 语法 */
+.backlinks{margin:26px 0 0;padding:16px 20px;border:1px solid var(--line);background:#fdfaf2}
+.backlinks .bht{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--dim);
+text-transform:uppercase;margin-bottom:10px}
+.backlinks a,.backlinks .bo{display:block;font-size:13px;padding:5px 0;text-decoration:none;color:var(--txt)}
+.backlinks a:hover{color:var(--gold)}
+.backlinks .bo{color:var(--dim)}
+.wl{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(168,132,47,.35);
+padding-bottom:.5px;transition:.16s}
+.wl:hover{background:#faf6ec;border-bottom-color:var(--gold)}
+.ht{font-family:var(--mono);font-size:.86em;letter-spacing:.5px;color:#2f9e8f;
+text-decoration:none;background:#eef7f4;padding:1px 6px;border:1px solid #cfe5e0}
+.ht:hover{background:#e2f1ec;border-color:#9fc3bb}
 .cut{clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px))}
 .cut-sm{clip-path:polygon(0 0,calc(100% - 11px) 0,100% 11px,100% 100%,11px 100%,0 calc(100% - 11px))}
 
@@ -274,10 +287,10 @@ background:#fff;color:var(--dim);text-decoration:none;transition:.16s;white-spac
 <div class="wrap">
   <div class="hud">
     <a class="mark" href="/nangongs-blog/"><span class="dia"></span><span class="brand">南宫萧痕<em>TO INSPIRE · TO MOVE · TO CREATE</em></span></a>
-    <nav class="nav"><a class="" href="/nangongs-blog/">全部</a><details class="dd"><summary class="on">专栏</summary><div class="ddbody"><a class="on" href="/nangongs-blog/c/tech/">计算机</a><a class="" href="/nangongs-blog/c/essay/">随笔</a><a class="" href="/nangongs-blog/c/hardware/">硬件</a><a class="" href="/nangongs-blog/c/debate/">辩论赛有感</a></div></details><a class="" href="/nangongs-blog/diary/">学习日记</a><a class="" href="/nangongs-blog/about/">关于</a></nav>
+    <nav class="nav"><a class="" href="/nangongs-blog/">全部</a><details class="dd"><summary class="on">专栏</summary><div class="ddbody"><a class="on" href="/nangongs-blog/c/tech/">计算机</a><a class="" href="/nangongs-blog/c/essay/">随笔</a><a class="" href="/nangongs-blog/c/hardware/">硬件</a><a class="" href="/nangongs-blog/c/debate/">辩论赛有感</a></div></details><a class="" href="/nangongs-blog/gear/">数码柜</a><a class="" href="/nangongs-blog/diary/">学习日记</a><a class="" href="/nangongs-blog/about/">关于</a></nav>
     <div class="status"><span class="pulse"></span>ONLINE</div>
   </div>
-<div class="grid2" style="margin-top:26px"><div><article class="article cut"><div class="k">计算机 — 阅读</div><h1>从网页上写的第一篇文章</h1><div class="post-meta"><span>2026.10.22</span><span>93 字</span><span>约 1 分钟</span><span>8 次阅读</span></div><div class="toc"><div class="t">目录</div><a class="lv2" href="#这篇文章是在网页上写的">这篇文章是在网页上写的</a><a class="lv3" href="#代码块也能用">代码块也能用</a></div><div class="prose"><h2 id="这篇文章是在网页上写的">这篇文章是在网页上写的</h2>
+<div class="grid2" style="margin-top:26px"><div><article class="article cut"><div class="k">计算机 — 阅读</div><h1>从网页上写的第一篇文章</h1><div class="post-meta"><span>2026.10.22</span><span>125 字</span><span>约 1 分钟</span><span>19 次阅读</span></div><div class="toc"><div class="t">目录</div><a class="lv2" href="#这篇文章是在网页上写的">这篇文章是在网页上写的</a><a class="lv3" href="#代码块也能用">代码块也能用</a></div><div class="prose"><h2 id="这篇文章是在网页上写的">这篇文章是在网页上写的</h2>
 <p>不是用 VS Code，也不是用记事本 —— 是在后台的表单里填的。</p>
 <p><strong>验证的重点</strong>：</p>
 <ul>
@@ -308,7 +321,10 @@ background:#fff;color:var(--dim);text-decoration:none;transition:.16s;white-spac
 <td>✅</td>
 </tr>
 </tbody>
-</table></div></div><div class="post-tags"><a href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">测试</a><a href="/nangongs-blog/t/%E5%90%8E%E5%8F%B0/">后台</a><a href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">写作</a></div></article><section class="cmtwrap cut" id="comments"><div class="cmtheader">Comments · <b>0</b> 条</div><div class="cmtempty">还没有评论。说点什么吧。</div><form class="cmtform" method="post" action="/p/%E4%BB%8E%E7%BD%91%E9%A1%B5%E4%B8%8A%E5%86%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/comment"><div class="fh">留下评论</div><div class="g3"><input type="text" name="nickname" placeholder="昵称（选填，默认「博士」）" maxlength="40"><input type="email" name="email" placeholder="邮箱（必填，不会公开）" maxlength="120" required><input type="text" name="website" placeholder="网站（选填）" maxlength="200"></div><textarea name="body" placeholder="想说的话……" maxlength="3000" required></textarea><input class="hp" type="text" name="hp" tabindex="-1" autocomplete="off"><div class="ft"><span class="note">邮箱只用于识别身份，不会显示在页面上。</span><button class="btn primary" type="submit">发表评论</button></div></form></section></div><aside><div class="panel cut-sm"><div class="ph">Profile</div><div class="avatar"><span>萧</span></div><div class="pname">南宫萧痕</div><blockquote class="pq">我从不后悔曾经的选择。我们做了可以做的一切，然后将希望留给未来。</blockquote><div class="taglist"><a class="tg">记录</a><a class="tg">回看</a><a class="tg">分享</a></div><div class="ann">本站正在搭建中。<br>内容会陆续补上，有问题欢迎留言。</div></div><div class="panel cut-sm"><div class="ph">Sectors</div><div class="navlist"><a class="on" href="/nangongs-blog/c/tech/"><span>计算机</span><span class="n">02</span></a><a class="" href="/nangongs-blog/c/essay/"><span>随笔</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/hardware/"><span>硬件</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/debate/"><span>辩论赛有感</span><span class="n">00</span></a></div></div><div class="panel cut-sm"><div class="ph">Tags</div><div class="taglist" style="justify-content:flex-start"><a class="tg " href="/nangongs-blog/t/openclaw/">openclaw 1</a><a class="tg " href="/nangongs-blog/t/windows/">windows 1</a><a class="tg " href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">写作 1</a><a class="tg " href="/nangongs-blog/t/%E5%90%8E%E5%8F%B0/">后台 1</a><a class="tg " href="/nangongs-blog/t/%E6%8A%98%E8%85%BE/">折腾 1</a><a class="tg " href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">测试 1</a></div></div></aside></div>
+</table></div><hr>
+<p>相关：这篇之后我写了 <a class="wl" href="/nangongs-blog/p/%E5%9C%A8%20Windows%20%E4%B8%8A%E8%A3%85%20OpenClaw%20%E7%9A%84%E5%AE%8C%E6%95%B4%E8%AE%B0%E5%BD%95/">在 Windows 上装 OpenClaw 的完整记录</a>，里面踩的坑更多。</p>
+<p>标签： <a class="ht" href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">#写作</a> <a class="ht" href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">#测试</a></p>
+</div><div class="post-tags"><a href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">测试</a><a href="/nangongs-blog/t/%E5%90%8E%E5%8F%B0/">后台</a><a href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">写作</a></div></article><section class="cmtwrap cut" id="comments"><div class="cmtheader">Comments · <b>0</b> 条</div><div class="cmtempty">还没有评论。说点什么吧。</div><form class="cmtform" method="post" action="/p/%E4%BB%8E%E7%BD%91%E9%A1%B5%E4%B8%8A%E5%86%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/comment"><div class="fh">留下评论</div><div class="g3"><input type="text" name="nickname" placeholder="昵称（选填，默认「博士」）" maxlength="40"><input type="email" name="email" placeholder="邮箱（必填，不会公开）" maxlength="120" required><input type="text" name="website" placeholder="网站（选填）" maxlength="200"></div><textarea name="body" placeholder="想说的话……" maxlength="3000" required></textarea><input class="hp" type="text" name="hp" tabindex="-1" autocomplete="off"><div class="ft"><span class="note">邮箱只用于识别身份，不会显示在页面上。</span><button class="btn primary" type="submit">发表评论</button></div></form></section></div><aside><div class="panel cut-sm"><div class="ph">Profile</div><div class="avatar"><span>萧</span></div><div class="pname">南宫萧痕</div><blockquote class="pq">我从不后悔曾经的选择。我们做了可以做的一切，然后将希望留给未来。</blockquote><div class="taglist"><a class="tg">记录</a><a class="tg">回看</a><a class="tg">分享</a></div><div class="ann">本站正在搭建中。<br>内容会陆续补上，有问题欢迎留言。</div></div><div class="panel cut-sm"><div class="ph">Sectors</div><div class="navlist"><a class="on" href="/nangongs-blog/c/tech/"><span>计算机</span><span class="n">02</span></a><a class="" href="/nangongs-blog/c/essay/"><span>随笔</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/hardware/"><span>硬件</span><span class="n">00</span></a><a class="" href="/nangongs-blog/c/debate/"><span>辩论赛有感</span><span class="n">00</span></a></div></div><div class="panel cut-sm"><div class="ph">Tags</div><div class="taglist" style="justify-content:flex-start"><a class="tg " href="/nangongs-blog/t/openclaw/">openclaw 1</a><a class="tg " href="/nangongs-blog/t/windows/">windows 1</a><a class="tg " href="/nangongs-blog/t/%E5%86%99%E4%BD%9C/">写作 1</a><a class="tg " href="/nangongs-blog/t/%E5%90%8E%E5%8F%B0/">后台 1</a><a class="tg " href="/nangongs-blog/t/%E6%8A%98%E8%85%BE/">折腾 1</a><a class="tg " href="/nangongs-blog/t/%E6%B5%8B%E8%AF%95/">测试 1</a></div></div></aside></div>
   <footer>
     <span>© 2026 NANGONG XIAOHEN</span>
     <span>INSPIRE / MOVE / CREATE</span>

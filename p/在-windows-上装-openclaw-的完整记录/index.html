@@ -26,6 +26,19 @@ background-image:repeating-linear-gradient(0deg,rgba(120,100,60,.028) 0 1px,tran
  linear-gradient(90deg,rgba(120,100,60,.030) 1px,transparent 1px);
 background-size:100% 4px,56px 56px,56px 56px}
 .wrap{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:0 24px 64px}
+/* Obsidian 语法 */
+.backlinks{margin:26px 0 0;padding:16px 20px;border:1px solid var(--line);background:#fdfaf2}
+.backlinks .bht{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--dim);
+text-transform:uppercase;margin-bottom:10px}
+.backlinks a,.backlinks .bo{display:block;font-size:13px;padding:5px 0;text-decoration:none;color:var(--txt)}
+.backlinks a:hover{color:var(--gold)}
+.backlinks .bo{color:var(--dim)}
+.wl{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(168,132,47,.35);
+padding-bottom:.5px;transition:.16s}
+.wl:hover{background:#faf6ec;border-bottom-color:var(--gold)}
+.ht{font-family:var(--mono);font-size:.86em;letter-spacing:.5px;color:#2f9e8f;
+text-decoration:none;background:#eef7f4;padding:1px 6px;border:1px solid #cfe5e0}
+.ht:hover{background:#e2f1ec;border-color:#9fc3bb}
 .cut{clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px))}
 .cut-sm{clip-path:polygon(0 0,calc(100% - 11px) 0,100% 11px,100% 100%,11px 100%,0 calc(100% - 11px))}
 
@@ -274,10 +287,10 @@ background:#fff;color:var(--dim);text-decoration:none;transition:.16s;white-spac
 <div class="wrap">
   <div class="hud">
     <a class="mark" href="/nangongs-blog/"><span class="dia"></span><span class="brand">南宫萧痕<em>TO INSPIRE · TO MOVE · TO CREATE</em></span></a>
-    <nav class="nav"><a class="" href="/nangongs-blog/">全部</a><details class="dd"><summary class="on">专栏</summary><div class="ddbody"><a class="on" href="/nangongs-blog/c/tech/">计算机</a><a class="" href="/nangongs-blog/c/essay/">随笔</a><a class="" href="/nangongs-blog/c/hardware/">硬件</a><a class="" href="/nangongs-blog/c/debate/">辩论赛有感</a></div></details><a class="" href="/nangongs-blog/diary/">学习日记</a><a class="" href="/nangongs-blog/about/">关于</a></nav>
+    <nav class="nav"><a class="" href="/nangongs-blog/">全部</a><details class="dd"><summary class="on">专栏</summary><div class="ddbody"><a class="on" href="/nangongs-blog/c/tech/">计算机</a><a class="" href="/nangongs-blog/c/essay/">随笔</a><a class="" href="/nangongs-blog/c/hardware/">硬件</a><a class="" href="/nangongs-blog/c/debate/">辩论赛有感</a></div></details><a class="" href="/nangongs-blog/gear/">数码柜</a><a class="" href="/nangongs-blog/diary/">学习日记</a><a class="" href="/nangongs-blog/about/">关于</a></nav>
     <div class="status"><span class="pulse"></span>ONLINE</div>
   </div>
-<div class="grid2" style="margin-top:26px"><div><article class="article cut"><div class="k">计算机 — 阅读</div><h1>在 Windows 上装 OpenClaw 的完整记录</h1><div class="post-meta"><span>2026.09.16</span><span>157 字</span><span>约 1 分钟</span><span>2 次阅读</span></div><div class="toc"><div class="t">目录</div><a class="lv2" href="#为什么要装这个">为什么要装这个</a><a class="lv2" href="#安装步骤">安装步骤</a><a class="lv3" href="#一准备环境">一、准备环境</a><a class="lv3" href="#二下载">二、下载</a><a class="lv2" href="#踩过的坑">踩过的坑</a></div><div class="prose"><h2 id="为什么要装这个">为什么要装这个</h2>
+<div class="grid2" style="margin-top:26px"><div><article class="article cut"><div class="k">计算机 — 阅读</div><h1>在 Windows 上装 OpenClaw 的完整记录</h1><div class="post-meta"><span>2026.09.16</span><span>157 字</span><span>约 1 分钟</span><span>13 次阅读</span></div><div class="toc"><div class="t">目录</div><a class="lv2" href="#为什么要装这个">为什么要装这个</a><a class="lv2" href="#安装步骤">安装步骤</a><a class="lv3" href="#一准备环境">一、准备环境</a><a class="lv3" href="#二下载">二、下载</a><a class="lv2" href="#踩过的坑">踩过的坑</a></div><div class="prose"><h2 id="为什么要装这个">为什么要装这个</h2>
 <p>一直想在本机跑一个能自己接管的 AI 工具，看了一圈最后选了 OpenClaw。</p>
 <h2 id="安装步骤">安装步骤</h2>
 <h3 id="一准备环境">一、准备环境</h3>
