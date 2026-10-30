@@ -284,6 +284,23 @@ background:#fff;color:var(--dim);text-decoration:none;transition:.16s;white-spac
 .btn.primary{background:var(--gold);border-color:var(--gold);color:#fff;font-weight:600}
 .btn.primary:hover{background:#8a6a1e;border-color:#8a6a1e;color:#fff}
 
+/* ---------- 站内搜索 ---------- */
+.find{display:flex;gap:14px;align-items:center;margin:0 0 22px}
+.find input{flex:1;font:inherit;font-size:17px;color:var(--txt);background:#fff;
+border:1px solid var(--line);padding:13px 16px;outline:none;transition:.16s}
+.find input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(131,100,26,.12)}
+.find .findn{font-family:var(--mono);font-size:12px;letter-spacing:1.4px;color:var(--dim);
+text-transform:uppercase;white-space:nowrap}
+.hit{display:block;border:1px solid var(--line);background:var(--panel);padding:16px 20px;
+margin-bottom:12px;text-decoration:none;transition:.18s;box-shadow:0 1px 3px rgba(120,100,60,.05)}
+.hit:hover{border-color:var(--line-hi);transform:translateY(-1px);box-shadow:0 14px 34px rgba(120,100,60,.12)}
+.hit .hm{font-family:var(--mono);font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;
+color:var(--dim);margin-bottom:7px}
+.hit .ht2{font-size:18px;font-weight:700;color:var(--title);line-height:1.45;margin-bottom:6px}
+.hit .hx{font-size:14px;color:var(--sub);line-height:1.72}
+.hit mark{background:rgba(131,100,26,.18);color:var(--title);padding:0 2px}
+.hits-empty{padding:44px 0;color:var(--dim);font-size:14px;text-align:center}
+
 /* ---------- 专栏总览 ---------- */
 .dcols{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:20px 0 10px}
 .dcol{position:relative;display:block;border:1px solid var(--line);background:var(--panel);
@@ -345,7 +362,7 @@ font-family:var(--mono);font-size:10.5px;letter-spacing:1.5px;color:var(--dim)}
 <div class="wrap">
   <div class="hud">
     <a class="mark" href="/"><span class="dia"></span><span class="brand">南宫萧痕<em>TO INSPIRE · TO MOVE · TO CREATE</em></span></a>
-    <nav class="nav"><a class="" href="/">全部</a><details class="dd"><summary class="">专栏</summary><div class="ddbody"><a class="" href="/c/tech/">计算机</a><a class="" href="/c/essay/">随笔</a><a class="" href="/c/hardware/">硬件</a><a class="" href="/c/debate/">辩论赛有感</a></div></details><a class="" href="/gear/">数码柜</a><a class="on" href="/diary/">学习日记</a><a class="" href="/about/">关于</a></nav>
+    <nav class="nav"><a class="" href="/">全部</a><details class="dd"><summary class="">专栏</summary><div class="ddbody"><a class="" href="/c/tech/">计算机</a><a class="" href="/c/essay/">随笔</a><a class="" href="/c/hardware/">硬件</a><a class="" href="/c/debate/">辩论赛有感</a></div></details><a class="" href="/gear/">数码柜</a><a class="on" href="/diary/">学习日记</a><a class="" href="/search/">搜索</a><a class="" href="/about/">关于</a></nav>
     <div class="status"><span class="pulse"></span>ONLINE</div>
   </div>
 <div class="pagehead"><div class="k">Diary — 英语学习日记</div><h1>英语学习日记</h1><p>已写 0 篇 · 连续 0 天 · 累计打卡 0 天</p></div><div class="sect-head">时间倒序</div><div class="dstream"><div class="empty">还没有记录。点上面的「今天学了」开始。</div></div>
